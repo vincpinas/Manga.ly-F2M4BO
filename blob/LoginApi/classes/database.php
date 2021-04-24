@@ -17,8 +17,6 @@ class Database extends Env {
             $this->db_host=$this->__getEnv('db_host_local');$this->db_name=$this->__getEnv('db_name_local');
             $this->db_user=$this->__getEnv('db_user_local');$this->db_password=$this->__getEnv('db_password_local'); 
         }
-
-        print($this);
     }
 
     public function __showConnVars() {
