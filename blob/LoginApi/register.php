@@ -65,11 +65,11 @@ if($_SERVER["REQUEST_METHOD"] != "POST") {
 
                 $insert_stmt->execute();
 
-                $returnData = msg(1,201,'You have successfully registered.');
+                $returnData = msg(1,201,'You have successfully registered.', 'Success');
             }
         }
         catch(PDOException $e){
-            $returnData = msg(0,500,$e->getMessage());
+            $returnData = msg(0,500,$e->getMessage(), 'Error');
         }
     }
 }

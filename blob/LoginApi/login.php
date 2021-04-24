@@ -59,7 +59,8 @@ if($_SERVER["REQUEST_METHOD"] != "POST") {
                     $returnData = [
                         'success' => 1,
                         'message' => 'You have successfully logged in.',
-                        'token' => $token
+                        'token' => $token,
+                        'type' => 'Success'
                     ];
                 } else {
                     $returnData = msg(0,422,'Invalid Password!','Warning');
@@ -69,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] != "POST") {
             }
         }
         catch(PDOException $e){
-            $returnData = msg(0,500,$e->getMessage());
+            $returnData = msg(0,500,$e->getMessage(), 'Error');
         }
     }
 };
