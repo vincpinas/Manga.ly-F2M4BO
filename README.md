@@ -17,16 +17,6 @@
 </h4>
 
 ---
-*__// TODO__*
-
-**_front of the list:_**
-* **Trello**
-* **Github**
-* **Responsive**
-* **Error Handling**
-* **Login / Registration**
-
-
 
 _Documentation_
 * Trello Board
@@ -67,5 +57,5 @@ ___This solo project is a manga/comic reading website using vanilla PHP for the 
 [reactjs.org]: https://reactjs.org/
 [php.net]: https://www.php.net/
 [react-icons.io]: https://react-icons.github.io/react-icons/
-[Manga.ly Trello Board]: https://trello.com/b/
-[Manga.ly]: http://30472.hosts1.ma-cloud.nl/manga/
+[Manga.ly Trello Board]: https://trello.com/b/XGvKyDTd/mangaly
+[Manga.ly]: http://30472.hosts1.ma-cloud.nl/mangaly/
