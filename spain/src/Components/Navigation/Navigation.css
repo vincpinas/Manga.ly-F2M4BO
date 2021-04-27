@@ -1,0 +1,193 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.globalHeader {
+    width: 100%;
+    z-index: 1999;
+    padding:  20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+}
+
+.marge10 {
+    margin-left: 25px;
+}
+
+.headerLink {
+    font-size: 0.95em;
+    font-weight: 300;
+}
+
+.headerLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 3px;
+    background: rgb(27, 27, 27);
+    transition: all 0.4s;
+}
+
+.headerLink:hover::after {
+    width: 100%;
+}
+
+.headerButton {
+    display: block;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 0.95em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.headerButton::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 3px;
+    background: rgb(27, 27, 27);
+    transition: all 0.4s;
+}
+
+.headerButton:hover::after {
+    width: 100%;
+}
+
+#searchBar {
+    border-radius: 15px;
+    border: 1px solid var(--lightborder);
+    padding: 6px 30px;
+    text-align: left;
+    font-size: 0.7em;
+    outline: none;
+}
+
+.searchWrapper {
+    position: relative;
+}
+
+.searchDisplay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2500;
+    background-color: var(--lighterbackground);
+    border-radius: 5px;
+    margin-top: 13px;
+    right: 20px;
+    width: fit-content;
+    padding: 3px;
+}
+
+.searchDisplay::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--lighterbackground);
+    right: 5%;
+    z-index: 1;
+    top: -8px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.searchPreview {
+    padding: 5px;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.searchPreview:hover {
+    color: var(--hovercolor);
+}
+
+.searchPreviewImg {
+    width: 35px;
+    margin-right: 5px;
+}
+
+.searchPreviewInfo {
+    width: 100%;
+    padding: 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.headerIcon {
+    font-size: 1.8em;
+    color: var(--lightgray);
+}
+
+.headerIcon:hover {
+    animation: gear-rotate 3s infinite;
+}
+
+.loadbar {
+    height: 2px;
+    width: 0%;
+    background-color: var(--hovercolor);
+}
+
+.loadbar.loading {
+    animation-fill-mode: forwards;
+    animation-name: global-loadbar-load;
+    animation-duration: 0.8s;
+}
+
+.settingsWrapper {
+    position: relative;
+}
+
+.settingsDisplay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2500;
+    background-color: var(--lighterbackground);
+    border-radius: 5px;
+    margin-top: 13px;
+    width: fit-content;
+
+}
+
+.settingsDisplay::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--lighterbackground);
+    right: 5%;
+    z-index: 1;
+    top: -8px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.settingPreview {
+    padding: 2px;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+}

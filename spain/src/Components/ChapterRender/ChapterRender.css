@@ -1,0 +1,30 @@
+.chapterCanvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+}
+
+.chapterPage {
+    max-width: 80%;
+}
+
+.chapterFooter {
+    width: 100%;
+    height: 5rem;
+}
+
+.buttonContainer {
+    margin: 45px;
+}
+
+.chapterButton {
+    background-color: var(--hovercolor);
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    margin: 10px;
+}

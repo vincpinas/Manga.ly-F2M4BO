@@ -1,0 +1,33 @@
+.welcomePage {
+    height: 100%;
+    overflow: hidden;
+}
+
+.welcomeContent {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeContent canvas {
+    opacity: 0;
+    animation: slide-fade-in 1.5s 0.3s forwards;
+}
+
+.welcomeTextContainer {
+    position: absolute;
+    bottom: 0px;
+    max-width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(100%);
+}
+
+.welcomeTextContainer.active {
+    animation: slide-in 1.5s 0.2s forwards;
+}

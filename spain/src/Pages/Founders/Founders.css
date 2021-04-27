@@ -1,0 +1,59 @@
+
+
+.foundersContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foundersCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foundersCard {
+    width: 400px;
+    height: 590px;
+    margin: 32px;
+    border-radius: 8px;
+    background: rgb(246, 246, 246);
+    box-shadow: rgb(0 0 0 / 16%) 6px 6px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foundersCard div {
+    border: 2px solid #DDE2E3;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foundersCard img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.foundersCard p {
+    max-width: 75%;
+    margin-bottom: 20px;
+}
+
+.foundersCard a {
+    text-align: left;
+    transition: color 0.3s ease-in-out 0s;
+    text-decoration: underline var(--hovercolor) !important;
+}
+
+.foundersCard a:hover {
+    color: var(--hovercolor);
+    text-decoration: none;
+}
