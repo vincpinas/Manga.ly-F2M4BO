@@ -9,11 +9,11 @@
 </p>
 
 <h4 align="center">  
-  <a href="#">Trello Board</a>
+  <a href="https://trello.com/b/XGvKyDTd/mangaly">Trello Board</a>
   <strong> · </strong>
   <a href="#">Live</a>
   <strong> · </strong>
-  <a href="#">Documentation</a>
+  <a href="UPDATES.md">Documentation</a>
 </h4>
 
 ---
