@@ -11,7 +11,6 @@
     text-rendering: optimizeLegibility;
 }
 
-
 :root {
     --lightwhite: rgb(255, 255, 255);
     --hovercolor: rgb(255, 178, 34);
@@ -43,6 +42,12 @@ body, html, #root {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.roundImg {
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
 }
 
 .notifactionContainer {
