@@ -7,7 +7,7 @@ require __DIR__.'/../jwt/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
 class JwtHandler {
-    protected $jwt_secrect;
+    protected $jwt_secret;
     protected $token;
     protected $issuedAt;
     protected $expire;
@@ -19,7 +19,7 @@ class JwtHandler {
         
         // Token Validity (In seconds)
         $this->expire = $this->issuedAt + 3600;
-        $this->jwt_secrect = "mySecretToken";  
+        $this->jwt_secret = "mySecretToken";  
     }
 
     public function __jwt_encode_data($iss, $data) {
@@ -32,7 +32,7 @@ class JwtHandler {
             "data"=> $data
         ];
 
-        $this->jwt = JWT::encode($this->token, $this->jwt_secrect);
+        $this->jwt = JWT::encode($this->token, $this->jwt_secret);
         return $this->jwt;
     }
 
@@ -48,7 +48,7 @@ class JwtHandler {
     
     public function __jwt_decode_data($jwt_token) {
         try{
-            $decode = JWT::decode($jwt_token, $this->jwt_secrect, array('HS256'));
+            $decode = JWT::decode($jwt_token, $this->jwt_secret, array('HS256'));
             return [
                 "auth" => 1, "data" => $decode->data
             ];
