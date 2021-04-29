@@ -44,3 +44,22 @@ export const pageTextHandler = (text: string) => {
         description: `Check out our Dev Logs on YouTube where we explain in detail what we are working on and what we have made so far, we read the comments so it's also a great place to give some recommendations for the next update😉`
     }
 };
+
+export const themes = {
+    light: [
+        {property: 'color', value: '#161616'},
+        {property: '--textcolor', value: '#161616'},
+        {property: '--background', value: '#f1f1f1'},
+        {property: '--lighterbackground', value: '#e6e6e6'},
+        {property: '--loadbarcolor', value: '#000000'},
+        {property: '--focuscolor', value: '#111111'},
+    ],
+    dark: [
+        {property: 'color', value: '#eaeaea'},
+        {property: '--textcolor', value: '#eaeaea'},
+        {property: '--background', value: '#111111'},
+        {property: '--lighterbackground', value: '#1a1a1a'},
+        {property: '--loadbarcolor', value: '#3399ff'},
+        {property: '--focuscolor', value: '#eaeaea'},
+    ]
+}

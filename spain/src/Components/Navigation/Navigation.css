@@ -133,15 +133,6 @@
     flex-direction: column;
 }
 
-.headerIcon {
-    font-size: 1.8em;
-    color: var(--lightgray);
-}
-
-.headerIcon:hover {
-    animation: gear-rotate 3s infinite;
-}
-
 .loadbar {
     height: 2px;
     width: 0%;
@@ -156,6 +147,7 @@
 
 .settingsWrapper {
     position: relative;
+    font-size: 12px;
 }
 
 .settingsDisplay {
@@ -173,7 +165,6 @@
 
 .settingsDisplay::after {
     position: absolute;
-    content: "";
     height: 15px;
     width: 15px;
     background-color: var(--lighterbackground);
@@ -189,5 +180,4 @@
     display: flex;
     width: 100%;
     padding: 5px;
-    font-size: 12px;
 }

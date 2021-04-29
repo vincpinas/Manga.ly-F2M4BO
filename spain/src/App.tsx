@@ -7,6 +7,7 @@ import ChapterRender from './Components/ChapterRender/ChapterRender';
 import Navigation from './Components/Navigation/Navigation';
 import TOS from './Components/Policies/TOS';
 import PrivPol from './Components/Policies/PrivPol';
+import {themes} from './Components/Helpers';
 
 // Pages
 import Welcome from './Pages/Support/Support';
@@ -27,21 +28,10 @@ function App() {
 
     useEffect(() => {
         let root = document.documentElement;
-        if(theme === 'light') {
-            root.style.setProperty('color', '#161616')
-            root.style.setProperty('--textcolor', '#161616')
-            root.style.setProperty('--background', '#f1f1f1')
-            root.style.setProperty('--lighterbackground', '#e6e6e6')
-            root.style.setProperty('--loadbarcolor', '#000000');
-            root.style.setProperty('--focuscolor', '#111111')
-        } else if(theme === 'dark') {
-            root.style.setProperty('color', '#eaeaea')
-            root.style.setProperty('--textcolor', '#eaeaea')
-            root.style.setProperty('--background', '#111111')
-            root.style.setProperty('--lighterbackground', '#1a1a1a')
-            root.style.setProperty('--loadbarcolor', '#3399ff');
-            root.style.setProperty('--focuscolor', '#eaeaea')
-        }
+        
+        if(theme === 'light')  themes.light.map(prop => { return root.style.setProperty(prop.property, prop.value);}); 
+        else if(theme === 'dark') themes.dark.map(prop => { return root.style.setProperty(prop.property, prop.value);});
+        
         localStorage.setItem('localTheme', theme);
     }, [theme]);
   
