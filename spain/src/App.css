@@ -34,44 +34,6 @@ body, html, #root {
     flex-direction: column;
 }
 
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-.roundImg {
-    border-radius: 50%;
-    width: 40px;
-    height: auto;
-}
-
-.notifactionContainer {
-    position: absolute;
-    height: fit-content;
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.notification {
-    padding: 20px 50px;
-    margin: 10px;
-    border-radius: 7px;
-    background-color: var(--background);
-    box-shadow: rgb(0 0 0 / 16%) 6px 6px 9px;
-    animation: notifi-fade-out 1s 2s forwards;
-}
-
 /* CSS Reset */
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import './GClasses.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components
@@ -28,7 +29,8 @@ function App() {
 
     useEffect(() => {
         let root = document.documentElement;
-        
+
+        // Map out the theme objects based on the theme state and save it into localStorage for client persistance.
         if(theme === 'light')  themes.light.map(prop => { return root.style.setProperty(prop.property, prop.value);}); 
         else if(theme === 'dark') themes.dark.map(prop => { return root.style.setProperty(prop.property, prop.value);});
         
