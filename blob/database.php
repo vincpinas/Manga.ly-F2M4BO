@@ -1,5 +1,5 @@
 <?php
-require  __DIR__."/../../env.php";
+require  __DIR__."/env.php";
 
 class Database extends Env {
     private $db_host;

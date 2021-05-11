@@ -7,7 +7,7 @@ header('Access-Control-Max-Age: 1000');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
 
 // Classes
-require __DIR__.'/classes/Database.php';
+require __DIR__.'/../database.php';
 
 function msg($success,$status,$message,$type,$extra = []){
     return array_merge([
