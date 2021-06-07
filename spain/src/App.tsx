@@ -8,7 +8,7 @@ import ChapterRender from './Components/ChapterRender/ChapterRender';
 import Navigation from './Components/Navigation/Navigation';
 import TOS from './Components/Policies/TOS';
 import PrivPol from './Components/Policies/PrivPol';
-import {themes} from './Components/Helpers';
+import { themes } from './Components/Helpers';
 
 // Pages
 import Welcome from './Pages/Support/Support';
@@ -21,6 +21,8 @@ import Manga from './Pages/Manga/Manga';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState<any>({loggedIn: false});
   const [theme, setTheme] = useState<string>('dark');
+
+  console.log(isLoggedIn)
 
     useEffect(() => {
         const localTheme = localStorage.getItem('localTheme')

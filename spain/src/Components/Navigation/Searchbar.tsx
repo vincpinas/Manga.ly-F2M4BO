@@ -27,7 +27,6 @@ function Searchbar() {
     }, [error]);
 
     const searchHandler = (e: any) => {
-        
         const searchString = e.target.value;
         const filteredManga = manga.filter((manga: any) => {
             return manga.name.toLowerCase().includes(searchString.toLowerCase().trim())

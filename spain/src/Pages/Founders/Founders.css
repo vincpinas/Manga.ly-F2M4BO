@@ -19,7 +19,7 @@
     height: 590px;
     margin: 32px;
     border-radius: 8px;
-    background: rgb(246, 246, 246);
+    background: var(--lighterbackground);
     box-shadow: rgb(0 0 0 / 16%) 6px 6px 9px;
     display: flex;
     flex-direction: column;
