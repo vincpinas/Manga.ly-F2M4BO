@@ -16,7 +16,7 @@
         $response['doc'] = ['created' => $created, 'updated' => $updated];
 
         // turning the data to json and printing it to the api
-        $json_response = json_encode($response, JSON_THROW_ON_ERROR);
+        $json_response = json_encode($response);
         echo $json_response;
     }
 

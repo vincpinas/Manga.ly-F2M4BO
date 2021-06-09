@@ -27,7 +27,7 @@ class Database extends Env {
     
     public function __dbConnection() {
         try{
-            $conn = new PDO('mysql:host='.$this->db_host.';dbname='.$this->db_name,$this->db_user,$this->db_password);
+            $conn = new PDO('mysql:host='.$this->db_host.';dbname='.$this->db_name.';charset=UTF8',$this->db_user,$this->db_password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
         }
