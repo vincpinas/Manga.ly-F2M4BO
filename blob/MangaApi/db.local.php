@@ -8,6 +8,7 @@
 
     // mysqli connection
     $con = new mysqli($host, $username, $password, $db);
+    $con->set_charset('utf8mb4');
 
     // custom error reporting
     if ($con->connect_error) {
