@@ -24,8 +24,8 @@ function Navigation({ style, isLoggedIn, setIsLoggedIn, theme, setTheme }: navig
                 </div>
                 <nav className="headerLinks">
                     <Searchbar/>
-                    <Link className="headerLink marge10 noselect" to="/login">Login</Link>
-                    <Link className="headerLink marge10 noselect" to="/register">Register</Link>
+                    {isLoggedIn.loggedIn?null:<Link className="headerLink marge10 noselect" to="/login">Login</Link>}
+                    {isLoggedIn.loggedIn?null:<Link className="headerLink marge10 noselect" to="/register">Register</Link>}
                     <Link className="headerLink marge10 noselect" to="/support">Support</Link>
                     {isLoggedIn.loggedIn?<Settingstab theme={theme} 
                                  setTheme={setTheme} 
