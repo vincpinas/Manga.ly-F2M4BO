@@ -30,8 +30,8 @@ function Login({ setIsLoggedIn, isLoggedIn }: loginProps) {
         <div className="loginPage">
             <div className="loginFormWrapper">
                 <form ref={form}>
-                    <input type="email" placeholder="Email.." name="email" required defaultValue="ikbengerrit92@gmail.com"/>
-                    <input type="password" placeholder="Password.." name="password" required defaultValue="lolaapje123" />
+                    <input type="email" placeholder="Email.." name="email" required />
+                    <input type="password" placeholder="Password.." name="password" required />
                     <input type="submit" value="Login" onClick={e => handleFormSubmit(e)} />
                 </form>
             </div>

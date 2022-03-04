@@ -35,12 +35,12 @@ function Register() {
             </div>
             <div className="registerFormWrapper">
                 <form ref={form}>
-                    <input type="text" placeholder="Username.." name="username" required defaultValue="vinc" />
-                    <input type="text" placeholder="First name.." name="firstname" required defaultValue="Vincent" />
-                    <input type="text" placeholder="Last name.." name="lastname" required defaultValue="Pinas" />
-                    <input type="email" placeholder="Email.." name="email" required defaultValue="ikbengerrit92@gmail.com" />
-                    <input type="password" placeholder="Password.." name="password" required defaultValue="lolaapje123" />
-                    <input type="password" placeholder=" Repeat Password.." name="pass_repeat" required defaultValue="lolaapje123" />
+                    <input type="text" placeholder="Username.." name="username" required />
+                    <input type="text" placeholder="First name.." name="firstname" required />
+                    <input type="text" placeholder="Last name.." name="lastname" required />
+                    <input type="email" placeholder="Email.." name="email" required />
+                    <input type="password" placeholder="Password.." name="password" required />
+                    <input type="password" placeholder=" Repeat Password.." name="pass_repeat" required />
                     <input type="submit" onClick={e => handleFormSubmit(e)} value="Register" />
                 </form>
             </div>
